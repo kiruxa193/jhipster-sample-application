@@ -1,0 +1,28 @@
+
+entity User {
+  login String required unique,
+  password String required,
+  firstName String,
+  lastName String,
+  email String required unique,
+  // Добавьте дополнительные поля по вашему усмотрению
+}
+
+entity Friend {
+  name String required,
+  friendMail String required unique,
+  congratulation String 
+  
+  // Добавьте дополнительные поля по вашему усмотрению
+}
+
+relationship ManyToMany {
+  User{friends(name)} to Friend,
+}
+
+
+
+
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
