@@ -1,0 +1,22 @@
+{
+  "applications": "*",
+  "entityTableName": "friend",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "friendMail",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique"]
+    },
+    {
+      "fieldName": "congratulation",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Friend",
+  "relationships": []
+}
